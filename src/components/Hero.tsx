@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, ArrowDown, Calendar, Flame } from 'lucide-react';
+import { heroHearthImg } from '../data/restaurantData';
 
 interface HeroProps {
   onOpenReservation: () => void;
@@ -12,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onExploreMenu }) 
       {/* Background Photography with Measured Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_culinary_hearth_1791195889704.jpg"
+          src={heroHearthImg}
           alt="Aurelia open woodfire hearth kitchen with glowing embers and copper cookware"
           className="w-full h-full object-cover object-center scale-105 animate-fade-in filter brightness-[0.75] contrast-[1.05]"
           referrerPolicy="no-referrer"

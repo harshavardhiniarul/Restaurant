@@ -1,3 +1,10 @@
+import heroHearthImg from '../assets/images/hero_culinary_hearth_1791195889704.jpg';
+import wagyuImg from '../assets/images/signature_dish_wagyu_1791195907167.jpg';
+import crudoImg from '../assets/images/signature_dish_crudo_1791195919325.jpg';
+import diningInteriorImg from '../assets/images/restaurant_interior_dining_1791195930241.jpg';
+
+export { heroHearthImg, wagyuImg, crudoImg, diningInteriorImg };
+
 export interface MenuItem {
   id: string;
   name: string;
@@ -129,7 +136,7 @@ export const A_LA_CARTE_MENU: MenuItem[] = [
     dietary: ['Gluten-Free', 'Pescatarian'],
     winePairing: '2021 Keller Riesling Trocken Kirchspiel',
     featured: true,
-    image: '/src/assets/images/signature_dish_crudo_1791195919325.jpg'
+    image: crudoImg
   },
   {
     id: 'crudo-2',
@@ -166,7 +173,7 @@ export const A_LA_CARTE_MENU: MenuItem[] = [
     dietary: ['Gluten-Free'],
     winePairing: '2017 Château Lynch-Bages Pauillac',
     featured: true,
-    image: '/src/assets/images/signature_dish_wagyu_1791195907167.jpg'
+    image: wagyuImg
   },
   {
     id: 'hearth-2',
@@ -288,7 +295,7 @@ export const CULINARY_PROVISIONS: CulinaryProvisionItem[] = [
       'Smoked Salt Cultured Butter & 48-Hour Sourdough Loaf',
       'Two Bourbon Caramel Dessert Pots with Spiced Crumble'
     ],
-    image: '/src/assets/images/signature_dish_wagyu_1791195907167.jpg'
+    image: wagyuImg
   },
   {
     id: 'box-2',

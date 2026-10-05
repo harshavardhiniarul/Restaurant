@@ -1,5 +1,5 @@
 import React from 'react';
-import { TEAM_MEMBERS, TESTIMONIALS } from '../data/restaurantData';
+import { TEAM_MEMBERS, TESTIMONIALS, diningInteriorImg } from '../data/restaurantData';
 import { Flame, Compass, Sparkles, Quote } from 'lucide-react';
 
 export const StoryAndSpace: React.FC = () => {
@@ -66,7 +66,7 @@ export const StoryAndSpace: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-lg overflow-hidden border border-white/10 shadow-2xl group">
               <img
-                src="/src/assets/images/restaurant_interior_dining_1791195930241.jpg"
+                src={diningInteriorImg}
                 alt="Aurelia intimate dining room with linen tablecloths, crystal glassware and garden views"
                 className="w-full aspect-[4/3] object-cover group-hover:scale-102 transition-transform duration-700 brightness-95"
                 referrerPolicy="no-referrer"
